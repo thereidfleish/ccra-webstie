@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gallery</title>
+    <link rel="stylesheet" type="text/css" href="styles/site.css" />
+</head>
+
+<body>
+    <header>
+        <div class="cols_wrapper">
+            <div class="col_element">
+                <a href="index.html">
+                    <picture>
+                        <!-- Client Provided Content -->
+                        <img class="header_img" src="images/ccralogo.png" width="150" height="69"
+                            alt="Cornell Computer Reuse Association Logo">
+                    </picture>
+                </a>
+                <button id="hamburger" aria-label="show navigation">
+                    <picture>
+                        <!-- Group Created Content -->
+                        <img class="hamburger_img" src="images/hamburger.svg" width="40" height="40" alt="">
+                    </picture>
+                </button>
+            </div>
+
+            <div class="col_element">
+                <a href="index.html">
+                    <h2>
+                        Cornell Computer Reuse Association
+                    </h2>
+                </a>
+
+                <nav>
+                    <ul id="nav_list" class="accessible-hidden_narrow">
+                        <li><a href="index.html">Home</a></li>
+                        <li>
+                            <button id="donate-li" aria-label="show more tabs for donating or requesting computers">
+                                <span class="arrow_wrapper">
+                                    Donate/Request Computers
+                                    <span class="nav_arrow" id="nav_arrow">></span>
+                                </span>
+                            </button>
+                            <div id="dropdown" class="accessible-hidden">
+                                <ul>
+                                    <li><a href="donation.html">Donate Computers</a></li>
+                                    <li><a href="request-donation.html">Request Computers</a></li>
+                                    <li><a href="monetary-donation.html">Give Money</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="selected"><a href="gallery.html">Gallery</a></li>
+                        <li><a href="press.html">Press</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <div class="picopt">
+                <button id="club" class="buttonpic galpress clubbutton ">Club Pictures</button>
+                <button id="kenya" class="buttonpic kenyabutton">Kenya Computer Lab</button>
+                <button id="afrique" class="buttonpic afriquebutton">codeAfrique</button>
+                <button id="nicaragua" class="buttonpic nicbutton">Nicaragua Computer Lab</button>
+                <button id="peru" class="buttonpic perubutton">Peace Corp Peru</button>
+            </div>
+            <div id="clubcarousel">
+                <div class="col carousel">
+                    <button aria-label="show previous image" id="lastc" class="arrow">〈 </button>
+                    <!-- Source: Pictures taken by Reid Fleishman -->
+                    <picture>
+                        <img class="slidec" src="images/IMG_7397.jpeg" alt="Club Meeting Pictures" width="700"
+                            height="525">
+
+                    </picture>
+                    <!-- Source: Pictures taken by Reid Fleishman -->
+                    <picture>
+                        <img class="slidec accessible-hidden" src="images/img_13.jpg" alt="Club Meeting Pictures"
+                            width="700" height="525">
+                    </picture>
+                    <!-- Source: Pictures taken by Reid Fleishman -->
+                    <picture>
+                        <img class="slidec accessible-hidden" src="images/IMG_7401.jpeg" alt="Club Meeting Pictures"
+                            width="700" height="525">
+                    </picture>
+                    <!-- Source: Pictures taken by Reid Fleishman -->
+                    <picture>
+                        <img class="slidec accessible-hidden" src="images/img_4.jpg" alt="Club Meeting Pictures"
+                            width="700" height="525">
+                    </picture>
+                    <!-- Source: Pictures taken by Reid Fleishman -->
+                    <picture>
+                        <img class="slidec accessible-hidden" src="images/img_5.jpg" alt="Club Meeting Pictures"
+                            width="700" height="525">
+                    </picture>
+                    <!-- Source: Pictures taken by Reid Fleishman -->
+                    <picture>
+                        <img class="slidec accessible-hidden" src="images/img_6.jpg" alt="Club Meeting Pictures"
+                            width="700" height="525">
+                    </picture>
+                    <!-- Source: Pictures taken by Reid Fleishman -->
+                    <picture>
+                        <img class="slidec accessible-hidden" src="images/img_9.jpg" alt="Club Meeting Pictures"
+                            width="700" height="525">
+                    </picture>
+                    <!-- Source: Pictures taken by Reid Fleishman -->
+                    <picture>
+                        <img class="slidec accessible-hidden" src="images/img_11.jpg" alt="Club Meeting Pictures"
+                            width="700" height="525">
+                    </picture>
+                    <!-- Source: Pictures taken by Reid Fleishman -->
+                    <picture>
+                        <img class="slidec accessible-hidden" src="images/img_10.jpg" alt="Club Meeting Pictures"
+                            width="700" height="525">
+                    </picture>
+                    <!-- Source: Pictures taken by Reid Fleishman -->
+                    <picture>
+                        <img class="slidec accessible-hidden" src="images/IMG_7406.jpeg"
+                            alt="Hardware ready to be donated" width="700" height="525">
+                    </picture>
+                    <!-- Source: Pictures taken by Reid Fleishman -->
+                    <picture>
+                        <img class="slidec accessible-hidden" src="images/img_14.jpg" alt="Hardware ready to be donated"
+                            width="700" height="525">
+                    </picture>
+                    <!-- Source: Pictures taken by Reid Fleishman -->
+                    <picture>
+                        <img class="slidec accessible-hidden" src="images/img_16.jpg" alt="Club Meeting Pictures"
+                            width="700" height="525">
+                    </picture>
+                    <button aria-label="show next image" id="nextc" class="arrow aleft">〉</button>
+                    <!-- 〉 ›-->
+                </div>
+                <p class="citation">Photo provided by CCRA</p>
+                <p class="caption">Club Meetings</p>
+                <div class="dots">
+                    <button aria-label="show image 1" id="dot1c" class="dc dp">•</button>
+                    <button aria-label="show image 2" id="dot2c" class="dc d">•</button>
+                    <button aria-label="show image 3" id="dot3c" class="dc d">•</button>
+                    <button aria-label="show image 4" id="dot4c" class="dc d">•</button>
+                    <button aria-label="show image 5" id="dot5c" class="dc d">•</button>
+                    <button aria-label="show image 6" id="dot6c" class="dc d">•</button>
+                    <button aria-label="show image 7" id="dot7c" class="dc d">•</button>
+                    <button aria-label="show image 8" id="dot8c" class="dc d">•</button>
+                    <button aria-label="show image 9" id="dot9c" class="dc d">•</button>
+                    <button aria-label="show image 10" id="dot10c" class="dc d">•</button>
+                    <button aria-label="show image 11" id="dot11c" class="dc d">•</button>
+                    <button aria-label="show image 12" id="dot12c" class="dc d">•</button>
+                </div>
+            </div>
+
+            <div id="kenyacarousel" class="accessible-hidden">
+                <div class="col carousel">
+                    <button aria-label="show previous image" id="lastk" class="arrow">〈 </button>
+                    <!-- Source: Pictures provided by CCRA (https://cornellcomputerreuse.org/gallery) -->
+                    <picture>
+                        <img class="slidek" src="images/kenya1.jpg" alt="Kenya Donation Pictures" width="700"
+                            height="525">
+                    </picture>
+                    <!-- Source: Pictures provided by CCRA (https://cornellcomputerreuse.org/gallery) -->
+                    <picture>
+                        <img class="slidek accessible-hidden" src="images/kenya2.jpg" alt="Kenya Donation Pictures"
+                            width="700" height="525">
+                    </picture>
+                    <!-- Source: Pictures provided by CCRA (https://cornellcomputerreuse.org/gallery) -->
+                    <picture>
+                        <img class="slidek accessible-hidden" src="images/kenya3.jpg" alt="Kenya Donation Pictures"
+                            width="700" height="525">
+                    </picture>
+                    <!-- Source: Pictures provided by CCRA (https://cornellcomputerreuse.org/gallery) -->
+                    <picture>
+                        <img class="slidek accessible-hidden" src="images/kenya4.jpg" alt="Kenya Donation Pictures"
+                            width="700" height="525">
+                    </picture>
+                    <!-- Source: Pictures provided by CCRA (https://cornellcomputerreuse.org/gallery) -->
+                    <picture>
+                        <img class="slidek accessible-hidden" src="images/kenya5.jpg" alt="Kenya Donation Pictures"
+                            width="700" height="525">
+                    </picture>
+                    <button aria-label="show next image" id="nextk" class="arrow aleft">〉</button>
+                    <!-- 〉 ›-->
+                </div>
+                <p class="citation">Photo provided by CCRA</p>
+                <p class="caption">Donation of Computers to Nigerian Computer Lab</p>
+                <div class="dots">
+                    <button aria-label="show image 1" id="dot1k" class="dk dp">•</button>
+                    <button aria-label="show image 2" id="dot2k" class="dk d">•</button>
+                    <button aria-label="show image 3" id="dot3k" class="dk d">•</button>
+                    <button aria-label="show image 4" id="dot4k" class="dk d">•</button>
+                    <button aria-label="show image 5" id="dot5k" class="dk d">•</button>
+                </div>
+            </div>
+
+            <div id="codeafpiccarousel" class="accessible-hidden">
+                <div class="col carousel">
+                    <button aria-label="show previous image" id="lasta" class="arrow">〈 </button>
+                    <!-- Source: Pictures provided by CCRA (https://cornellcomputerreuse.org/gallery) -->
+                    <picture>
+                        <img class="slidea" src="images/codeafrique1.jpg" alt="Code Afrique Project Picture" width="700"
+                            height="525">
+                    </picture>
+                    <!-- Source: Pictures provided by CCRA (https://cornellcomputerreuse.org/gallery) -->
+                    <picture>
+                        <img class="slidea accessible-hidden" src="images/codeafrique2.jpg"
+                            alt="Code Afrique Project Picture" width="700" height="466">
+                    </picture>
+                    <!-- Source: Pictures provided by CCRA (https://cornellcomputerreuse.org/gallery) -->
+                    <picture>
+                        <img class="slidea accessible-hidden" src="images/codeafrique4.jpg"
+                            alt="Code Afrique Project Picture" width="700" height="466">
+                    </picture>
+                    <!-- Source: Pictures provided by CCRA (https://cornellcomputerreuse.org/gallery) -->
+                    <picture>
+                        <img class="slidea accessible-hidden" src="images/codeafrique5.jpg"
+                            alt="Code Afrique Project Picture" width="700" height="420">
+                    </picture>
+                    <button aria-label="show next image" id="nexta" class="arrow aleft">〉</button>
+                    <!-- 〉 ›-->
+                </div>
+                <p class="citation">Photo provided by CCRA</p>
+                <p class="caption">Donation of Computers to CodeAfrique Program</p>
+                <div class="dots">
+                    <button aria-label="show image 1" id="dot1a" class="da dp">•</button>
+                    <button aria-label="show image 2" id="dot2a" class="da d">•</button>
+                    <button aria-label="show image 3" id="dot3a" class="da d">•</button>
+                    <button aria-label="show image 4" id="dot4a" class="da d">•</button>
+                </div>
+            </div>
+
+            <div id="nicpiccarousel" class="accessible-hidden">
+                <div class="col carousel">
+                    <button aria-label="show previous image" id="lastn" class="arrow">〈 </button>
+                    <!-- Source: Pictures provided by CCRA (https://cornellcomputerreuse.org/gallery) -->
+                    <picture>
+                        <img class="sliden" src="images/nic1.jpg" alt="Nicaragua Computer Lab Picture" width="700"
+                            height="525">
+                    </picture>
+                    <!-- Source: Pictures provided by CCRA (https://cornellcomputerreuse.org/gallery) -->
+                    <picture>
+                        <img class="sliden accessible-hidden" src="images/nic2.jpg" alt="Nicaragua Computer Lab Picture"
+                            width="700" height="525">
+                    </picture>
+                    <!-- Source: Pictures provided by CCRA (https://cornellcomputerreuse.org/gallery) -->
+                    <picture>
+                        <img class="sliden accessible-hidden" src="images/nic3.jpg" alt="Nicaragua Computer Lab Picture"
+                            width="700" height="525">
+                    </picture>
+                    <button aria-label="show next image" id="nextn" class="arrow aleft">〉</button>
+                    <!-- 〉 ›-->
+                </div>
+                <p class="citation">Photo provided by CCRA</p>
+                <p class="caption">Donation of Computers to a community computer lab in Nicaragua </p>
+                <div class="dots">
+                    <button aria-label="show image 1" id="dot1n" class="dn dp">•</button>
+                    <button aria-label="show image 2" id="dot2n" class="dn d">•</button>
+                    <button aria-label="show image 3" id="dot3n" class="dn d">•</button>
+                </div>
+            </div>
+
+            <div id="pcpiccarousel" class="accessible-hidden">
+                <div class="col carousel">
+                    <button aria-label="show previous image" id="lastp" class="arrow">〈 </button>
+                    <!-- Source: Pictures provided by CCRA (https://cornellcomputerreuse.org/gallery) -->
+                    <picture>
+                        <img class="slidep" src="images/pc1.jpg" alt="Peace Corps Peru Pictures" width="700"
+                            height="465">
+                    </picture>
+                    <!-- Source: Pictures provided by CCRA (https://cornellcomputerreuse.org/gallery) -->
+                    <picture>
+                        <img class="slidep accessible-hidden" src="images/pc2.jpg" alt="Peace Corps Peru Pictures"
+                            width="700" height="465">
+                    </picture>
+                    <!-- Source: Pictures provided by CCRA (https://cornellcomputerreuse.org/gallery) -->
+                    <picture>
+                        <img class="slidep accessible-hidden" src="images/pc3.jpg" alt="Peace Corps Peru Pictures"
+                            width="700" height="465">
+                    </picture>
+                    <button aria-label="show next image" id="nextp" class="arrow aleft">〉</button>
+                    <!-- 〉 ›-->
+                </div>
+                <p class="citation">Photo provided by CCRA</p>
+                <p class="caption">Donation of Computers to Peace Corps Peru</p>
+                <div class="dots">
+                    <button aria-label="show image 1" id="dot1p" class="dpc dp">•</button>
+                    <button aria-label="show image 2" id="dot2p" class="dpc d">•</button>
+                    <button aria-label="show image 3" id="dot3p" class="dpc d">•</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>© Cornell Computer Reuse Association 2022</p>
+        <a href="https://www.facebook.com/Cornell-Computer-Reuse-Association-418484831551199/" target="_blank">
+            <img src="images/facebook-icon.png" alt="facebook logo">
+        </a>
+    </footer>
+
+    <script src="scripts/jquery-3.6.1.js"></script>
+    <script src="scripts/gallerychange.js"></script>
+    <script src="scripts/gallery.js"></script>
+    <script src="scripts/nav.js"></script>
+</body>
+
+</html>

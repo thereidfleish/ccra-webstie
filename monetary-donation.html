@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Monetary Donations</title>
+  <link rel="stylesheet" type="text/css" href="styles/site.css" />
+</head>
+
+<body>
+  <header>
+    <div class="cols_wrapper">
+      <div class="col_element">
+        <a href="index.html">
+          <picture>
+            <!-- Client Provided Content -->
+            <img class="header_img" src="images/ccralogo.png" width="150" height="69"
+              alt="Cornell Computer Reuse Association Logo">
+          </picture>
+        </a>
+        <button id="hamburger" aria-label="show navigation">
+          <picture>
+            <!-- Group Created Content -->
+            <img class="hamburger_img" src="images/hamburger.svg" width="40" height="40" alt="">
+          </picture>
+        </button>
+      </div>
+
+      <div class="col_element">
+        <a href="index.html">
+          <h2>
+            Cornell Computer Reuse Association
+          </h2>
+        </a>
+
+        <nav>
+          <ul id="nav_list" class="accessible-hidden_narrow">
+            <li><a href="index.html">Home</a></li>
+            <li>
+              <button id="donate-li" aria-label="show more tabs for donating or requesting computers">
+                <span class="arrow_wrapper selected">
+                  Donate/Request Computers
+                  <span class="nav_arrow" id="nav_arrow">></span>
+                </span>
+              </button>
+              <div id="dropdown" class="accessible-hidden">
+                <ul>
+                  <li><a href="donation.html">Donate Computers</a></li>
+                  <li><a href="request-donation.html">Request Computers</a></li>
+                  <li class="selected"><a href="monetary-donation.html">Give Money</a></li>
+                </ul>
+              </div>
+            </li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="press.html">Press</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+  </header>
+  <main>
+    <h2>Monetary Donations to Us</h2>
+    <p>
+      You can support us with a monetary donation with the following steps.
+    </p>
+    <ol class="section">
+      <li>Go to <a href="https://www.giving.cornell.edu/give/" target="_blank">https://www.giving.cornell.edu/give/</a>
+      </li>
+      <li>When selecting a fund, choose <span class=emphasis>Other</span></li>
+      <li>Scroll down and click the <span class=emphasis>+</span> to the right of "Other", and then click <span
+          class=emphasis>Next Step</span></li>
+      <li>In the "Tell us where you would like your gift(s) to go" and the "Other Designation or Special Instructions"
+        fields, type in <span class=emphasis>“Cornell Computer Reuse Association”</span></li>
+    </ol>
+    <p>
+      We greatly appreciate your interest in supporting CCRA!
+    </p>
+  </main>
+
+  <footer>
+    <p>© Cornell Computer Reuse Association 2022</p>
+    <a href="https://www.facebook.com/Cornell-Computer-Reuse-Association-418484831551199/" target="_blank">
+      <img src="images/facebook-icon.png" alt="facebook logo">
+    </a>
+  </footer>
+
+  <script src="scripts/jquery-3.6.1.js"></script>
+  <script src="scripts/nav.js"></script>
+</body>
+
+</html>
