@@ -1,22 +1,20 @@
-            - name: SFTP Deploy
-  # You may pin to the exact commit or the version.
-  # uses: wlixcc/SFTP-Deploy-Action@da88a4dbe95286266bbac3c0b2b8284048d20c8f
-  uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-  with:
-    # username
-    username: Reid
-    # your sftp server
-    server: gnsrobotics.com
-    # your sftp server port, default to 22
-    port: 8082
-    # will put all file under this path
-    local_path: ./*
-    # files will copy to under remote_path
-    remote_path: ./web-ccra
-    # connection via sftp protocol only
-    sftp_only: true
-    # This operation will delete all files in the remote path before upload. Please be careful set this to true
-    delete_remote_files: false
-    # SSH passsword，If a password is set, the secret key pair is ignored
-    password: ${{ secrets.SFTP_PW }} 
-          
+on: [push]
+
+jobs:
+    deploy_job:
+    runs-on: ubuntu-latest
+    name: SFTP Deploy
+    steps:
+        # - name: Checkout
+        # uses: actions/checkout@v2
+      - name: deploy file
+        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+        with:
+            username: 'Reid'
+            server: 'gnsrobotics.com'
+            port: 8082
+            local_path: './*'
+            remote_path: './web-ccra'
+            sftp_only: true
+            delete_remote_files: false
+            password: ${{ secrets.SFTP_PW }}
