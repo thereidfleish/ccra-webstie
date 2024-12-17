@@ -13,7 +13,7 @@ jobs:
                 username: 'Reid'
                 server: 'gnsrobotics.com'
                 port: 8082
-                local_path: './*'
+                # local_path: './*'
                 remote_path: './web-ccra'
                 sftp_only: true
                 delete_remote_files: false
