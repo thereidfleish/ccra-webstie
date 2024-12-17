@@ -2,19 +2,19 @@ on: [push]
 
 jobs:
     deploy_job:
-    runs-on: ubuntu-latest
-    name: SFTP Deploy
-    steps:
+        runs-on: ubuntu-latest
+        name: SFTP Deploy
+        steps:
         # - name: Checkout
         # uses: actions/checkout@v2
-      - name: deploy file
-        uses: wlixcc/SFTP-Deploy-Action@v1.2.4
-        with:
-            username: 'Reid'
-            server: 'gnsrobotics.com'
-            port: 8082
-            local_path: './*'
-            remote_path: './web-ccra'
-            sftp_only: true
-            delete_remote_files: false
-            password: ${{ secrets.SFTP_PW }}
+          - name: deploy file
+            uses: wlixcc/SFTP-Deploy-Action@v1.2.4
+            with:
+                username: 'Reid'
+                server: 'gnsrobotics.com'
+                port: 8082
+                local_path: './*'
+                remote_path: './web-ccra'
+                sftp_only: true
+                delete_remote_files: false
+                password: ${{ secrets.SFTP_PW }}
