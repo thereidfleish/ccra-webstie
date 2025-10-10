@@ -124,3 +124,8 @@ p a:hover {
     border-radius: 50%;
     max-width: 250px;
 }
+
+#inv-sheet {
+    height: 380px;
+    width: 100%;
+}
